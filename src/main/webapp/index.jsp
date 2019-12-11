@@ -1,8 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+
     pageEncoding="UTF-8"%>
 
 <%
-request.setAttribute("pageHeading", "MK Pets!");
+request.setAttribute("pageHeading", "pk Pets!");
 %>
 
 <%!
@@ -15,5 +15,5 @@ request.setAttribute("pageHeading", "MK Pets!");
   <p>Welcome to my store!</p>
 </div>
 
-<p>Contact me at mkpets@gmail.com</p>
+<p>Contact me at ppkpets@gmail.com</p>
 <p>The number of visitors is <%= visitor %></p>

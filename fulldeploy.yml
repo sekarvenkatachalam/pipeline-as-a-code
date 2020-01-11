@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+     - name: to stop tomcat8
+       service: name=tomcat8 state=stopped
+       become: true
+     - name: to remove old files from webapps
+       file: path=/var/lib/tomcat8/webapps/my-farm.war state=absent
+       become: true
+
+     - name: copy new war filr fram webapps
+       copy: src=target/sekar-farm.war dest=/var/lib/tomcat8/webapps/my-farm.war mode=0777
+       become: true
+
+     - name: to start tomcat8
+       service: name=tomcat8 state=started
+       become: true
+...

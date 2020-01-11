@@ -20,6 +20,12 @@
 			<version>3.1.0</version>
 		</dependency>
 	</dependencies>
+        <properties>
+        <sonar.projectKey>sekar-farms-trial1</sonar.projectKey>
+        <sonar.organization>sekar-farms</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>e009eecb29404b53c0714b6e1dbdfdc7b629d905</sonar.login>
+        </properties>
 	<build>
 		<finalName>my-farm</finalName>
 	</build>

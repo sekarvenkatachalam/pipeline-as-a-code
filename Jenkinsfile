@@ -29,7 +29,7 @@ pipeline{
                   steps{
                   sh "sleep 5"
                   sh "chmod 0777 monitoring.sh"
-                  sh "./monitorting.sh"
+                  sh "./monitoring.sh"
                   }
           }
     }
